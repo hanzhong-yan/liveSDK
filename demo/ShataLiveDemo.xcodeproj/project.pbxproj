@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AA7D8AA1D7D4D0100DB4F83 /* libLiveVideoCoreSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA7D8A61D7D4CA000DB4F83 /* libLiveVideoCoreSDK.a */; };
+		4AE968041D2A52DC0009CC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968031D2A52DC0009CC5A /* main.m */; };
+		4AE968071D2A52DC0009CC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968061D2A52DC0009CC5A /* AppDelegate.m */; };
+		4AE968101D2A52DC0009CC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9680E1D2A52DC0009CC5A /* Main.storyboard */; };
+		4AE968121D2A52DC0009CC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968111D2A52DC0009CC5A /* Assets.xcassets */; };
+		4AE968151D2A52DC0009CC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968131D2A52DC0009CC5A /* LaunchScreen.storyboard */; };
+		4AE968201D2A52DC0009CC5A /* TabNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9681F1D2A52DC0009CC5A /* TabNavigationTests.m */; };
+		4AE9683A1D2A53F50009CC5A /* HeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968391D2A53F50009CC5A /* HeiViewController.m */; };
+		4AE9683D1D2A540B0009CC5A /* LiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9683C1D2A540B0009CC5A /* LiaoViewController.m */; };
+		4AE968401D2A54180009CC5A /* JieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9683F1D2A54180009CC5A /* JieViewController.m */; };
+		4AE968541D2A5CC30009CC5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968531D2A5CC30009CC5A /* libz.tbd */; };
+		4AE968561D2A5CCD0009CC5A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968551D2A5CCD0009CC5A /* libbz2.tbd */; };
+		4AE968691D2A6BD10009CC5A /* pic2_transit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968611D2A6BD10009CC5A /* pic2_transit.jpg */; };
+		4AE9686A1D2A6BD10009CC5A /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968621D2A6BD10009CC5A /* pic2.jpg */; };
+		4AE9686B1D2A6BD10009CC5A /* RoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968641D2A6BD10009CC5A /* RoomListViewController.m */; };
+		4AE9686C1D2A6BD10009CC5A /* RoomListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968651D2A6BD10009CC5A /* RoomListViewController.xib */; };
+		4AE9686D1D2A6BD10009CC5A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968671D2A6BD10009CC5A /* TableViewCell.m */; };
+		4AE9686E1D2A6BD10009CC5A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968681D2A6BD10009CC5A /* TableViewCell.xib */; };
+		4AE968801D2B94500009CC5A /* StartLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9687F1D2B94500009CC5A /* StartLiveViewController.m */; };
+		4AE968901D2CAAC80009CC5A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968831D2CAAC80009CC5A /* ASValuePopUpView.m */; };
+		4AE968911D2CAAC80009CC5A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968851D2CAAC80009CC5A /* ASValueTrackingSlider.m */; };
+		4AE968921D2CAAC80009CC5A /* LiveShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968871D2CAAC80009CC5A /* LiveShowViewController.m */; };
+		4AE968931D2CAAC80009CC5A /* XMNShareScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9688B1D2CAAC80009CC5A /* XMNShareScrollView.m */; };
+		4AE968941D2CAAC80009CC5A /* XMNShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9688D1D2CAAC80009CC5A /* XMNShareView.m */; };
+		4AE968951D2CAAC80009CC5A /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9688F1D2CAAC80009CC5A /* ZJSwitch.m */; };
+		4AE968A41D2CB4580009CC5A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968A31D2CB4580009CC5A /* CoreMedia.framework */; };
+		4AE968A61D2CB46D0009CC5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968A51D2CB46D0009CC5A /* AVFoundation.framework */; };
+		4AE968A81D2CB4800009CC5A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968A71D2CB4800009CC5A /* VideoToolbox.framework */; };
+		4AE968AA1D2CB48B0009CC5A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968A91D2CB48B0009CC5A /* AudioToolbox.framework */; };
+		4AE968AC1D2CB4990009CC5A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968AB1D2CB4990009CC5A /* OpenGLES.framework */; };
+		4AE968AE1D2CB4A60009CC5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968AD1D2CB4A60009CC5A /* CoreGraphics.framework */; };
+		4AE968B11D2CBE380009CC5A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE968B01D2CBE380009CC5A /* libstdc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AE9681C1D2A52DC0009CC5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE967F71D2A52DC0009CC5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE967FE1D2A52DC0009CC5A;
+			remoteInfo = TabNavigation;
+		};
+		4AE968271D2A52DC0009CC5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE967F71D2A52DC0009CC5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE967FE1D2A52DC0009CC5A;
+			remoteInfo = TabNavigation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AA7D8A51D7D4CA000DB4F83 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = ../lib/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		4AA7D8A61D7D4CA000DB4F83 /* libLiveVideoCoreSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLiveVideoCoreSDK.a; path = ../lib/libLiveVideoCoreSDK.a; sourceTree = "<group>"; };
+		4AA7D8AB1D7D5CBC00DB4F83 /* LiveVideoCoreSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveVideoCoreSDK.h; path = ../lib/LiveVideoCoreSDK.h; sourceTree = "<group>"; };
+		4AA7D8AC1D7D5CBC00DB4F83 /* VCSimpleSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCSimpleSession.h; path = ../lib/VCSimpleSession.h; sourceTree = "<group>"; };
+		4AE967FF1D2A52DC0009CC5A /* ShataLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShataLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE968031D2A52DC0009CC5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AE968051D2A52DC0009CC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AE968061D2A52DC0009CC5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AE9680F1D2A52DC0009CC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AE968111D2A52DC0009CC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE968141D2A52DC0009CC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AE968161D2A52DC0009CC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE9681B1D2A52DC0009CC5A /* ShataLiveDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShataLiveDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE9681F1D2A52DC0009CC5A /* TabNavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabNavigationTests.m; sourceTree = "<group>"; };
+		4AE968211D2A52DC0009CC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE968261D2A52DC0009CC5A /* ShataLiveDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShataLiveDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE9682A1D2A52DC0009CC5A /* TabNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabNavigationUITests.m; sourceTree = "<group>"; };
+		4AE9682C1D2A52DC0009CC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE968381D2A53F50009CC5A /* HeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeiViewController.h; sourceTree = "<group>"; };
+		4AE968391D2A53F50009CC5A /* HeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeiViewController.m; sourceTree = "<group>"; };
+		4AE9683B1D2A540A0009CC5A /* LiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiaoViewController.h; sourceTree = "<group>"; };
+		4AE9683C1D2A540B0009CC5A /* LiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiaoViewController.m; sourceTree = "<group>"; };
+		4AE9683E1D2A54180009CC5A /* JieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JieViewController.h; sourceTree = "<group>"; };
+		4AE9683F1D2A54180009CC5A /* JieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JieViewController.m; sourceTree = "<group>"; };
+		4AE968531D2A5CC30009CC5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4AE968551D2A5CCD0009CC5A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		4AE968611D2A6BD10009CC5A /* pic2_transit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2_transit.jpg; sourceTree = "<group>"; };
+		4AE968621D2A6BD10009CC5A /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		4AE968631D2A6BD10009CC5A /* RoomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomListViewController.h; sourceTree = "<group>"; };
+		4AE968641D2A6BD10009CC5A /* RoomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomListViewController.m; sourceTree = "<group>"; };
+		4AE968651D2A6BD10009CC5A /* RoomListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomListViewController.xib; sourceTree = "<group>"; };
+		4AE968661D2A6BD10009CC5A /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		4AE968671D2A6BD10009CC5A /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		4AE968681D2A6BD10009CC5A /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		4AE9687E1D2B94500009CC5A /* StartLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartLiveViewController.h; sourceTree = "<group>"; };
+		4AE9687F1D2B94500009CC5A /* StartLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartLiveViewController.m; sourceTree = "<group>"; };
+		4AE968821D2CAAC80009CC5A /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		4AE968831D2CAAC80009CC5A /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		4AE968841D2CAAC80009CC5A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		4AE968851D2CAAC80009CC5A /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		4AE968861D2CAAC80009CC5A /* LiveShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveShowViewController.h; sourceTree = "<group>"; };
+		4AE968871D2CAAC80009CC5A /* LiveShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveShowViewController.m; sourceTree = "<group>"; };
+		4AE968891D2CAAC80009CC5A /* XMNShareMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareMenu.h; sourceTree = "<group>"; };
+		4AE9688A1D2CAAC80009CC5A /* XMNShareScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareScrollView.h; sourceTree = "<group>"; };
+		4AE9688B1D2CAAC80009CC5A /* XMNShareScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNShareScrollView.m; sourceTree = "<group>"; };
+		4AE9688C1D2CAAC80009CC5A /* XMNShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShareView.h; sourceTree = "<group>"; };
+		4AE9688D1D2CAAC80009CC5A /* XMNShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNShareView.m; sourceTree = "<group>"; };
+		4AE9688E1D2CAAC80009CC5A /* ZJSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSwitch.h; sourceTree = "<group>"; };
+		4AE9688F1D2CAAC80009CC5A /* ZJSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSwitch.m; sourceTree = "<group>"; };
+		4AE968A31D2CB4580009CC5A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4AE968A51D2CB46D0009CC5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4AE968A71D2CB4800009CC5A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4AE968A91D2CB48B0009CC5A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4AE968AB1D2CB4990009CC5A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4AE968AD1D2CB4A60009CC5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4AE968B01D2CBE380009CC5A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE967FC1D2A52DC0009CC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA7D8AA1D7D4D0100DB4F83 /* libLiveVideoCoreSDK.a in Frameworks */,
+				4AE968B11D2CBE380009CC5A /* libstdc++.tbd in Frameworks */,
+				4AE968AE1D2CB4A60009CC5A /* CoreGraphics.framework in Frameworks */,
+				4AE968AC1D2CB4990009CC5A /* OpenGLES.framework in Frameworks */,
+				4AE968AA1D2CB48B0009CC5A /* AudioToolbox.framework in Frameworks */,
+				4AE968A81D2CB4800009CC5A /* VideoToolbox.framework in Frameworks */,
+				4AE968A61D2CB46D0009CC5A /* AVFoundation.framework in Frameworks */,
+				4AE968A41D2CB4580009CC5A /* CoreMedia.framework in Frameworks */,
+				4AE968561D2A5CCD0009CC5A /* libbz2.tbd in Frameworks */,
+				4AE968541D2A5CC30009CC5A /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968181D2A52DC0009CC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968231D2A52DC0009CC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AE967F61D2A52DC0009CC5A = {
+			isa = PBXGroup;
+			children = (
+				4AE968411D2A5C280009CC5A /* shataPlayer */,
+				4AE9687D1D2B935E0009CC5A /* shataLive */,
+				4AE968501D2A5C9F0009CC5A /* framework */,
+				4AE968011D2A52DC0009CC5A /* ShataLiveDemo */,
+				4AE9681E1D2A52DC0009CC5A /* ShataLiveDemoTests */,
+				4AE968291D2A52DC0009CC5A /* ShataLiveDemoUITests */,
+				4AE968001D2A52DC0009CC5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE968001D2A52DC0009CC5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE967FF1D2A52DC0009CC5A /* ShataLiveDemo.app */,
+				4AE9681B1D2A52DC0009CC5A /* ShataLiveDemo.xctest */,
+				4AE968261D2A52DC0009CC5A /* ShataLiveDemo.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE968011D2A52DC0009CC5A /* ShataLiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968051D2A52DC0009CC5A /* AppDelegate.h */,
+				4AE968061D2A52DC0009CC5A /* AppDelegate.m */,
+				4AE9680E1D2A52DC0009CC5A /* Main.storyboard */,
+				4AE968111D2A52DC0009CC5A /* Assets.xcassets */,
+				4AE968131D2A52DC0009CC5A /* LaunchScreen.storyboard */,
+				4AE968161D2A52DC0009CC5A /* Info.plist */,
+				4AE968021D2A52DC0009CC5A /* Supporting Files */,
+				4AE968381D2A53F50009CC5A /* HeiViewController.h */,
+				4AE968391D2A53F50009CC5A /* HeiViewController.m */,
+				4AE9683B1D2A540A0009CC5A /* LiaoViewController.h */,
+				4AE9683C1D2A540B0009CC5A /* LiaoViewController.m */,
+				4AE9683E1D2A54180009CC5A /* JieViewController.h */,
+				4AE9683F1D2A54180009CC5A /* JieViewController.m */,
+			);
+			name = ShataLiveDemo;
+			path = TabNavigation;
+			sourceTree = "<group>";
+		};
+		4AE968021D2A52DC0009CC5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968031D2A52DC0009CC5A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AE9681E1D2A52DC0009CC5A /* ShataLiveDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9681F1D2A52DC0009CC5A /* TabNavigationTests.m */,
+				4AE968211D2A52DC0009CC5A /* Info.plist */,
+			);
+			name = ShataLiveDemoTests;
+			path = TabNavigationTests;
+			sourceTree = "<group>";
+		};
+		4AE968291D2A52DC0009CC5A /* ShataLiveDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9682A1D2A52DC0009CC5A /* TabNavigationUITests.m */,
+				4AE9682C1D2A52DC0009CC5A /* Info.plist */,
+			);
+			name = ShataLiveDemoUITests;
+			path = TabNavigationUITests;
+			sourceTree = "<group>";
+		};
+		4AE968411D2A5C280009CC5A /* shataPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968611D2A6BD10009CC5A /* pic2_transit.jpg */,
+				4AE968621D2A6BD10009CC5A /* pic2.jpg */,
+				4AE968631D2A6BD10009CC5A /* RoomListViewController.h */,
+				4AE968641D2A6BD10009CC5A /* RoomListViewController.m */,
+				4AE968651D2A6BD10009CC5A /* RoomListViewController.xib */,
+				4AE968661D2A6BD10009CC5A /* TableViewCell.h */,
+				4AE968671D2A6BD10009CC5A /* TableViewCell.m */,
+				4AE968681D2A6BD10009CC5A /* TableViewCell.xib */,
+			);
+			name = shataPlayer;
+			sourceTree = "<group>";
+		};
+		4AE968501D2A5C9F0009CC5A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7D8A51D7D4CA000DB4F83 /* IJKMediaFramework.framework */,
+				4AA7D8A61D7D4CA000DB4F83 /* libLiveVideoCoreSDK.a */,
+				4AE968B01D2CBE380009CC5A /* libstdc++.tbd */,
+				4AE968AD1D2CB4A60009CC5A /* CoreGraphics.framework */,
+				4AE968AB1D2CB4990009CC5A /* OpenGLES.framework */,
+				4AE968A91D2CB48B0009CC5A /* AudioToolbox.framework */,
+				4AE968A71D2CB4800009CC5A /* VideoToolbox.framework */,
+				4AE968A51D2CB46D0009CC5A /* AVFoundation.framework */,
+				4AE968A31D2CB4580009CC5A /* CoreMedia.framework */,
+				4AE968531D2A5CC30009CC5A /* libz.tbd */,
+				4AE968551D2A5CCD0009CC5A /* libbz2.tbd */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		4AE9687D1D2B935E0009CC5A /* shataLive */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7D8AB1D7D5CBC00DB4F83 /* LiveVideoCoreSDK.h */,
+				4AA7D8AC1D7D5CBC00DB4F83 /* VCSimpleSession.h */,
+				4AE968811D2CAAC80009CC5A /* ASValueTrackingSlider */,
+				4AE968861D2CAAC80009CC5A /* LiveShowViewController.h */,
+				4AE968871D2CAAC80009CC5A /* LiveShowViewController.m */,
+				4AE968881D2CAAC80009CC5A /* XMNShareMenu */,
+				4AE9688E1D2CAAC80009CC5A /* ZJSwitch.h */,
+				4AE9688F1D2CAAC80009CC5A /* ZJSwitch.m */,
+				4AE9687E1D2B94500009CC5A /* StartLiveViewController.h */,
+				4AE9687F1D2B94500009CC5A /* StartLiveViewController.m */,
+			);
+			name = shataLive;
+			sourceTree = "<group>";
+		};
+		4AE968811D2CAAC80009CC5A /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968821D2CAAC80009CC5A /* ASValuePopUpView.h */,
+				4AE968831D2CAAC80009CC5A /* ASValuePopUpView.m */,
+				4AE968841D2CAAC80009CC5A /* ASValueTrackingSlider.h */,
+				4AE968851D2CAAC80009CC5A /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		4AE968881D2CAAC80009CC5A /* XMNShareMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968891D2CAAC80009CC5A /* XMNShareMenu.h */,
+				4AE9688A1D2CAAC80009CC5A /* XMNShareScrollView.h */,
+				4AE9688B1D2CAAC80009CC5A /* XMNShareScrollView.m */,
+				4AE9688C1D2CAAC80009CC5A /* XMNShareView.h */,
+				4AE9688D1D2CAAC80009CC5A /* XMNShareView.m */,
+			);
+			path = XMNShareMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE967FE1D2A52DC0009CC5A /* ShataLiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE9682F1D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemo" */;
+			buildPhases = (
+				4AE967FB1D2A52DC0009CC5A /* Sources */,
+				4AE967FC1D2A52DC0009CC5A /* Frameworks */,
+				4AE967FD1D2A52DC0009CC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShataLiveDemo;
+			productName = TabNavigation;
+			productReference = 4AE967FF1D2A52DC0009CC5A /* ShataLiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AE9681A1D2A52DC0009CC5A /* ShataLiveDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE968321D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemoTests" */;
+			buildPhases = (
+				4AE968171D2A52DC0009CC5A /* Sources */,
+				4AE968181D2A52DC0009CC5A /* Frameworks */,
+				4AE968191D2A52DC0009CC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE9681D1D2A52DC0009CC5A /* PBXTargetDependency */,
+			);
+			name = ShataLiveDemoTests;
+			productName = TabNavigationTests;
+			productReference = 4AE9681B1D2A52DC0009CC5A /* ShataLiveDemo.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AE968251D2A52DC0009CC5A /* ShataLiveDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE968351D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemoUITests" */;
+			buildPhases = (
+				4AE968221D2A52DC0009CC5A /* Sources */,
+				4AE968231D2A52DC0009CC5A /* Frameworks */,
+				4AE968241D2A52DC0009CC5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE968281D2A52DC0009CC5A /* PBXTargetDependency */,
+			);
+			name = ShataLiveDemoUITests;
+			productName = TabNavigationUITests;
+			productReference = 4AE968261D2A52DC0009CC5A /* ShataLiveDemo.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE967F71D2A52DC0009CC5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = shata;
+				TargetAttributes = {
+					4AE967FE1D2A52DC0009CC5A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7M94VE5998;
+					};
+					4AE9681A1D2A52DC0009CC5A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4AE967FE1D2A52DC0009CC5A;
+					};
+					4AE968251D2A52DC0009CC5A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4AE967FE1D2A52DC0009CC5A;
+					};
+				};
+			};
+			buildConfigurationList = 4AE967FA1D2A52DC0009CC5A /* Build configuration list for PBXProject "ShataLiveDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE967F61D2A52DC0009CC5A;
+			productRefGroup = 4AE968001D2A52DC0009CC5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE967FE1D2A52DC0009CC5A /* ShataLiveDemo */,
+				4AE9681A1D2A52DC0009CC5A /* ShataLiveDemoTests */,
+				4AE968251D2A52DC0009CC5A /* ShataLiveDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE967FD1D2A52DC0009CC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE968151D2A52DC0009CC5A /* LaunchScreen.storyboard in Resources */,
+				4AE9686A1D2A6BD10009CC5A /* pic2.jpg in Resources */,
+				4AE9686E1D2A6BD10009CC5A /* TableViewCell.xib in Resources */,
+				4AE968691D2A6BD10009CC5A /* pic2_transit.jpg in Resources */,
+				4AE968121D2A52DC0009CC5A /* Assets.xcassets in Resources */,
+				4AE968101D2A52DC0009CC5A /* Main.storyboard in Resources */,
+				4AE9686C1D2A6BD10009CC5A /* RoomListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968191D2A52DC0009CC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968241D2A52DC0009CC5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE967FB1D2A52DC0009CC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE9686D1D2A6BD10009CC5A /* TableViewCell.m in Sources */,
+				4AE968801D2B94500009CC5A /* StartLiveViewController.m in Sources */,
+				4AE968931D2CAAC80009CC5A /* XMNShareScrollView.m in Sources */,
+				4AE968071D2A52DC0009CC5A /* AppDelegate.m in Sources */,
+				4AE9686B1D2A6BD10009CC5A /* RoomListViewController.m in Sources */,
+				4AE968901D2CAAC80009CC5A /* ASValuePopUpView.m in Sources */,
+				4AE968911D2CAAC80009CC5A /* ASValueTrackingSlider.m in Sources */,
+				4AE968921D2CAAC80009CC5A /* LiveShowViewController.m in Sources */,
+				4AE968951D2CAAC80009CC5A /* ZJSwitch.m in Sources */,
+				4AE968941D2CAAC80009CC5A /* XMNShareView.m in Sources */,
+				4AE968041D2A52DC0009CC5A /* main.m in Sources */,
+				4AE9683A1D2A53F50009CC5A /* HeiViewController.m in Sources */,
+				4AE968401D2A54180009CC5A /* JieViewController.m in Sources */,
+				4AE9683D1D2A540B0009CC5A /* LiaoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968171D2A52DC0009CC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE968201D2A52DC0009CC5A /* TabNavigationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE968221D2A52DC0009CC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AE9681D1D2A52DC0009CC5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE967FE1D2A52DC0009CC5A /* ShataLiveDemo */;
+			targetProxy = 4AE9681C1D2A52DC0009CC5A /* PBXContainerItemProxy */;
+		};
+		4AE968281D2A52DC0009CC5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE967FE1D2A52DC0009CC5A /* ShataLiveDemo */;
+			targetProxy = 4AE968271D2A52DC0009CC5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AE9680E1D2A52DC0009CC5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE9680F1D2A52DC0009CC5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AE968131D2A52DC0009CC5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE968141D2A52DC0009CC5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AE9682D1D2A52DC0009CC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AE9682E1D2A52DC0009CC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE968301D2A52DC0009CC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				INFOPLIST_FILE = TabNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shatacloud.live.demo;
+				PRODUCT_NAME = ShataLiveDemo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7s arm64 armv7";
+			};
+			name = Debug;
+		};
+		4AE968311D2A52DC0009CC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				INFOPLIST_FILE = TabNavigation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shatacloud.live.demo;
+				PRODUCT_NAME = ShataLiveDemo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7s arm64 armv7";
+			};
+			name = Release;
+		};
+		4AE968331D2A52DC0009CC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TabNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shataclound.TabNavigationTests;
+				PRODUCT_NAME = ShataLiveDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShataLiveDemo.app/ShataLiveDemo";
+			};
+			name = Debug;
+		};
+		4AE968341D2A52DC0009CC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TabNavigationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shataclound.TabNavigationTests;
+				PRODUCT_NAME = ShataLiveDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShataLiveDemo.app/ShataLiveDemo";
+			};
+			name = Release;
+		};
+		4AE968361D2A52DC0009CC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				INFOPLIST_FILE = TabNavigationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shataclound.TabNavigationUITests;
+				PRODUCT_NAME = ShataLiveDemo;
+				TEST_TARGET_NAME = TabNavigation;
+			};
+			name = Debug;
+		};
+		4AE968371D2A52DC0009CC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				INFOPLIST_FILE = TabNavigationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shataclound.TabNavigationUITests;
+				PRODUCT_NAME = ShataLiveDemo;
+				TEST_TARGET_NAME = TabNavigation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE967FA1D2A52DC0009CC5A /* Build configuration list for PBXProject "ShataLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE9682D1D2A52DC0009CC5A /* Debug */,
+				4AE9682E1D2A52DC0009CC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE9682F1D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE968301D2A52DC0009CC5A /* Debug */,
+				4AE968311D2A52DC0009CC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE968321D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE968331D2A52DC0009CC5A /* Debug */,
+				4AE968341D2A52DC0009CC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE968351D2A52DC0009CC5A /* Build configuration list for PBXNativeTarget "ShataLiveDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE968361D2A52DC0009CC5A /* Debug */,
+				4AE968371D2A52DC0009CC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AE967F71D2A52DC0009CC5A /* Project object */;
+}
