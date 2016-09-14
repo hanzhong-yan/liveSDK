@@ -10,24 +10,22 @@
                                         @"dnsParserUrl":@"http://httpdnslej.satadn.com/down",
                                                                         @"key":@"cztv"
                                                                                 }];
-    //dnsParserUrl 是分配的dns解析的服务地址
-    //key是分配的用于防盗链的key
-	   3.初始化：
-    - (void)LiveInit:(NSURL*)rtmpUrl Preview:(UIView*)previewView;
-    或者
-    - (void)LiveInit:(NSURL*)rtmpUrl Preview:(UIView*)previewView VideSize:(CGSize)videSize BitRate:(LIVE_BITRATE)iBitRate FrameRate:(LIVE_FRAMERATE)iFrameRate;
-	4.开始推流
-- (void)connect;
-
+            //dnsParserUrl 是分配的dns解析的服务地址
+            //key是分配的用于防盗链的key
+    3.初始化：
+            - (void)LiveInit:(NSURL*)rtmpUrl Preview:(UIView*)previewView;
+            或者
+            - (void)LiveInit:(NSURL*)rtmpUrl Preview:(UIView*)previewView VideSize:(CGSize)videSize BitRate:(LIVE_BITRATE)iBitRate FrameRate:(LIVE_FRAMERATE)iFrameRate;
+    4.开始推流
+        - (void)connect;
     5.结束推流
     - (void)disconnect;
-
     6.处理推流 SDK 状态变化事件
-    实现协议LIVEVCSessionDelegate
-    状态说明:
+        实现协议LIVEVCSessionDelegate
+        状态说明:
     typedef NS_ENUM(NSInteger, VCSessionState)
     {
-	VCSessionStateNone, ///推流 SDK 的初始状态/
+	VCSessionStateNone, //推流 SDK 的初始状态
 	VCSessionStatePreviewStarted,//推流 SDK 开始出现预览画面
 	VCSessionStateStarting,//推流 SDK 开始连接服务器
 	VCSessionStateStarted,//推流已经开始
@@ -35,10 +33,8 @@
 	VCSessionStateError//推流 SDK 出错
 
     };
-
     7.切换前后摄像头
     - (void)setCameraFront:(Boolean)bCameraFrontFlag; 
-
 ###   注意事项：
 	1.iOS9引入了新特性App Transport Security (ATS)，要求App内访问的网络必须使用 HTTPS协议,现在sdk的DNS解析用的是http，所以需要在app中作如下设置：
 	    1.在Info.plist中添加NSAppTransportSecurity类型Dictionary。
