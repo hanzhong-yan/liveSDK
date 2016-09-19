@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 #import "LiveVideoCoreSDK.h"
 
 @interface AppDelegate ()
@@ -30,7 +30,7 @@
                                                                                      @"key":@"cztv"
                                                                                      }];
     
-    //[IJKFFMoviePlayerController initEnv:cdnParam2];
+    [IJKFFMoviePlayerController initEnv:cdnParam2];
     
     
     

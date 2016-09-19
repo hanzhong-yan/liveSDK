@@ -8,7 +8,7 @@
 
 #import "RoomListViewController.h"
 #import "TableViewCell.h"
-//#import "IJKMoviePlayerViewController.h"
+#import "IJKMoviePlayerViewController.h"
 
 
 
@@ -128,9 +128,9 @@
     [parameters setObject:transmitImgView forKey:@"transmitImgView"];
     
     NSURL *url = [NSURL URLWithString:path];
-    //[IJKVideoViewController presentFromViewController:self withTitle:[NSString stringWithFormat:@"URL: %@", path] URL:url parameters:parameters completion:^{
+    [IJKVideoViewController presentFromViewController:self withTitle:[NSString stringWithFormat:@"URL: %@", path] URL:url parameters:parameters completion:^{
         //            [self.navigationController popViewControllerAnimated:NO];
-    //}];
+    }];
     //[self.navigationController pushViewController:secondVC animated:YES];
     //[self presentViewController:secondVC animated:YES completion:nil];
 }

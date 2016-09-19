@@ -76,7 +76,7 @@
     [_FilterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _FilterButton.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
     [_FilterButton addTarget:self action:@selector(OnFilterClicked:) forControlEvents:UIControlEventTouchUpInside];
-    //[self.view addSubview:_FilterButton];
+    [self.view addSubview:_FilterButton];
     
     float fCameraChangeButtonW = fFilterButtonW;
     float fCameraChangeButtonH = fFilterButtonH;
@@ -140,7 +140,7 @@
         [self.view addSubview:_MicSlider];
         [self.view addSubview:_ExitButton];
         [self.view addSubview:_RtmpStatusLabel];
-        //[self.view addSubview:_FilterButton];
+        [self.view addSubview:_FilterButton];
         [self.view addSubview:_CameraChangeButton];
     });
 }

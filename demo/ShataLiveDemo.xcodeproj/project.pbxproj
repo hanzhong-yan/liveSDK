@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AA7D8A91D7D4D0100DB4F83 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA7D8A51D7D4CA000DB4F83 /* IJKMediaFramework.framework */; };
 		4AA7D8AA1D7D4D0100DB4F83 /* libLiveVideoCoreSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA7D8A61D7D4CA000DB4F83 /* libLiveVideoCoreSDK.a */; };
 		4AE968041D2A52DC0009CC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968031D2A52DC0009CC5A /* main.m */; };
 		4AE968071D2A52DC0009CC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968061D2A52DC0009CC5A /* AppDelegate.m */; };
@@ -25,6 +26,10 @@
 		4AE9686C1D2A6BD10009CC5A /* RoomListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968651D2A6BD10009CC5A /* RoomListViewController.xib */; };
 		4AE9686D1D2A6BD10009CC5A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968671D2A6BD10009CC5A /* TableViewCell.m */; };
 		4AE9686E1D2A6BD10009CC5A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968681D2A6BD10009CC5A /* TableViewCell.xib */; };
+		4AE968751D2A6C1B0009CC5A /* IJKMediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968711D2A6C1B0009CC5A /* IJKMediaControl.m */; };
+		4AE968761D2A6C1B0009CC5A /* IJKMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968731D2A6C1B0009CC5A /* IJKMoviePlayerViewController.m */; };
+		4AE968771D2A6C1B0009CC5A /* IJKMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE968741D2A6C1B0009CC5A /* IJKMoviePlayerViewController.xib */; };
+		4AE9687A1D2A6C5B0009CC5A /* IJKDemoHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968791D2A6C5B0009CC5A /* IJKDemoHistory.m */; };
 		4AE968801D2B94500009CC5A /* StartLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9687F1D2B94500009CC5A /* StartLiveViewController.m */; };
 		4AE968901D2CAAC80009CC5A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968831D2CAAC80009CC5A /* ASValuePopUpView.m */; };
 		4AE968911D2CAAC80009CC5A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE968851D2CAAC80009CC5A /* ASValueTrackingSlider.m */; };
@@ -93,6 +98,14 @@
 		4AE968661D2A6BD10009CC5A /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		4AE968671D2A6BD10009CC5A /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		4AE968681D2A6BD10009CC5A /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		4AE9686F1D2A6C1B0009CC5A /* IJKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKCommon.h; sourceTree = "<group>"; };
+		4AE968701D2A6C1B0009CC5A /* IJKMediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaControl.h; sourceTree = "<group>"; };
+		4AE968711D2A6C1B0009CC5A /* IJKMediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKMediaControl.m; sourceTree = "<group>"; };
+		4AE968721D2A6C1B0009CC5A /* IJKMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMoviePlayerViewController.h; sourceTree = "<group>"; };
+		4AE968731D2A6C1B0009CC5A /* IJKMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKMoviePlayerViewController.m; sourceTree = "<group>"; };
+		4AE968741D2A6C1B0009CC5A /* IJKMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKMoviePlayerViewController.xib; sourceTree = "<group>"; };
+		4AE968781D2A6C5B0009CC5A /* IJKDemoHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoHistory.h; sourceTree = "<group>"; };
+		4AE968791D2A6C5B0009CC5A /* IJKDemoHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoHistory.m; sourceTree = "<group>"; };
 		4AE9687E1D2B94500009CC5A /* StartLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartLiveViewController.h; sourceTree = "<group>"; };
 		4AE9687F1D2B94500009CC5A /* StartLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartLiveViewController.m; sourceTree = "<group>"; };
 		4AE968821D2CAAC80009CC5A /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
@@ -122,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA7D8A91D7D4D0100DB4F83 /* IJKMediaFramework.framework in Frameworks */,
 				4AA7D8AA1D7D4D0100DB4F83 /* libLiveVideoCoreSDK.a in Frameworks */,
 				4AE968B11D2CBE380009CC5A /* libstdc++.tbd in Frameworks */,
 				4AE968AE1D2CB4A60009CC5A /* CoreGraphics.framework in Frameworks */,
@@ -235,6 +249,7 @@
 				4AE968661D2A6BD10009CC5A /* TableViewCell.h */,
 				4AE968671D2A6BD10009CC5A /* TableViewCell.m */,
 				4AE968681D2A6BD10009CC5A /* TableViewCell.xib */,
+				4AE968571D2A637A0009CC5A /* ijkMedia */,
 			);
 			name = shataPlayer;
 			sourceTree = "<group>";
@@ -255,6 +270,21 @@
 				4AE968551D2A5CCD0009CC5A /* libbz2.tbd */,
 			);
 			name = framework;
+			sourceTree = "<group>";
+		};
+		4AE968571D2A637A0009CC5A /* ijkMedia */ = {
+			isa = PBXGroup;
+			children = (
+				4AE968781D2A6C5B0009CC5A /* IJKDemoHistory.h */,
+				4AE968791D2A6C5B0009CC5A /* IJKDemoHistory.m */,
+				4AE9686F1D2A6C1B0009CC5A /* IJKCommon.h */,
+				4AE968701D2A6C1B0009CC5A /* IJKMediaControl.h */,
+				4AE968711D2A6C1B0009CC5A /* IJKMediaControl.m */,
+				4AE968721D2A6C1B0009CC5A /* IJKMoviePlayerViewController.h */,
+				4AE968731D2A6C1B0009CC5A /* IJKMoviePlayerViewController.m */,
+				4AE968741D2A6C1B0009CC5A /* IJKMoviePlayerViewController.xib */,
+			);
+			name = ijkMedia;
 			sourceTree = "<group>";
 		};
 		4AE9687D1D2B935E0009CC5A /* shataLive */ = {
@@ -407,6 +437,7 @@
 				4AE968691D2A6BD10009CC5A /* pic2_transit.jpg in Resources */,
 				4AE968121D2A52DC0009CC5A /* Assets.xcassets in Resources */,
 				4AE968101D2A52DC0009CC5A /* Main.storyboard in Resources */,
+				4AE968771D2A6C1B0009CC5A /* IJKMoviePlayerViewController.xib in Resources */,
 				4AE9686C1D2A6BD10009CC5A /* RoomListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,15 +467,18 @@
 				4AE968801D2B94500009CC5A /* StartLiveViewController.m in Sources */,
 				4AE968931D2CAAC80009CC5A /* XMNShareScrollView.m in Sources */,
 				4AE968071D2A52DC0009CC5A /* AppDelegate.m in Sources */,
+				4AE9687A1D2A6C5B0009CC5A /* IJKDemoHistory.m in Sources */,
 				4AE9686B1D2A6BD10009CC5A /* RoomListViewController.m in Sources */,
 				4AE968901D2CAAC80009CC5A /* ASValuePopUpView.m in Sources */,
 				4AE968911D2CAAC80009CC5A /* ASValueTrackingSlider.m in Sources */,
 				4AE968921D2CAAC80009CC5A /* LiveShowViewController.m in Sources */,
+				4AE968751D2A6C1B0009CC5A /* IJKMediaControl.m in Sources */,
 				4AE968951D2CAAC80009CC5A /* ZJSwitch.m in Sources */,
 				4AE968941D2CAAC80009CC5A /* XMNShareView.m in Sources */,
 				4AE968041D2A52DC0009CC5A /* main.m in Sources */,
 				4AE9683A1D2A53F50009CC5A /* HeiViewController.m in Sources */,
 				4AE968401D2A54180009CC5A /* JieViewController.m in Sources */,
+				4AE968761D2A6C1B0009CC5A /* IJKMoviePlayerViewController.m in Sources */,
 				4AE9683D1D2A540B0009CC5A /* LiaoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
