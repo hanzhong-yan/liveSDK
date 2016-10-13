@@ -12,6 +12,7 @@
 @implementation LiveShowViewController
 {
     UIView* _AllBackGroudView;
+    UIView *aSmallView ;
     UIButton* _ExitButton;
     UILabel*  _RtmpStatusLabel;
     UIButton* _FilterButton;
@@ -36,6 +37,10 @@
     
     _AllBackGroudView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, fScreenW, fScreenH)];
     [self.view addSubview:_AllBackGroudView];
+    
+    aSmallView = [[UIView alloc] initWithFrame:CGRectMake(fScreenW/2, fScreenH/2, fScreenW/2, fScreenH/2)];
+    [aSmallView setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:aSmallView];
     
     float fExitButtonW = 40;
     float fExitButtonH = 20;
@@ -72,10 +77,10 @@
     _FilterButton.backgroundColor = [UIColor blueColor];
     _FilterButton.layer.masksToBounds = YES;
     _FilterButton.layer.cornerRadius  = 5;
-    [_FilterButton setTitle:@"滤镜" forState:UIControlStateNormal];
+    [_FilterButton setTitle:@"对话" forState:UIControlStateNormal];
     [_FilterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _FilterButton.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:12];
-    [_FilterButton addTarget:self action:@selector(OnFilterClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_FilterButton addTarget:self action:@selector(OnChatClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_FilterButton];
     
     float fCameraChangeButtonW = fFilterButtonW;
@@ -143,6 +148,38 @@
         [self.view addSubview:_FilterButton];
         [self.view addSubview:_CameraChangeButton];
     });
+}
+
+-(void) OnChatClicked:(id)sender {
+    //NSURL *chatUrl = [NSURL URLWithString:@"rtmp://172.30.41.169/test/123457"];
+    NSURL *chatUrl = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
+    
+    IJKFFOptions *options = [IJKFFOptions optionsByDefault];
+    if(self.player){
+        return;
+    }
+    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:chatUrl withOptions:options];
+    self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    self.player.view.frame = aSmallView.bounds;
+    self.player.scalingMode = IJKMPMovieScalingModeAspectFit;
+    self.player.shouldAutoplay = YES;
+    [aSmallView setBackgroundColor:[UIColor blackColor]];
+    [aSmallView addSubview:self.player.view];
+    
+//    NSError *error = nil;
+//    if (NO == [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:&error]) {
+//        NSLog(@"IJKAudioKit: AVAudioSession.setCategory() failed: %@\n", error ? [error localizedDescription] : @"nil");
+//        return;
+//    }
+//    
+//    error = nil;
+//    if (NO == [[AVAudioSession sharedInstance] setActive:YES error:&error]) {
+//        NSLog(@"IJKAudioKit: AVAudioSession.setActive(YES) failed: %@\n", error ? [error localizedDescription] : @"nil");
+//        return;
+//    }
+    
+    
+    [self.player prepareToPlay];
 }
 
 -(void) OnCameraChangeClicked:(id)sender{
@@ -217,6 +254,9 @@
     NSLog(@"Rtmp[%@] is ended", self.RtmpUrl);
     [[LiveVideoCoreSDK sharedinstance] disconnect];
     [[LiveVideoCoreSDK sharedinstance] LiveRelease];
+    
+    [self.player shutdown];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 

@@ -34,6 +34,8 @@
 - (IBAction)onClickDone:(id)sender;
 - (IBAction)onClickPlay:(id)sender;
 - (IBAction)onClickPause:(id)sender;
+- (IBAction)onClickChat:(id)sender;
+
 
 - (IBAction)didSliderTouchDown;
 - (IBAction)didSliderTouchCancel;

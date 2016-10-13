@@ -21,16 +21,21 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="54" userLabel="Overlay" customClass="UIControl">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            <rect key="frame" x="8" y="-8" width="480" height="320"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4ZI-0o-F2w">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
+                                    <rect key="frame" x="-8" y="8" width="480" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <items>
                                         <barButtonItem systemItem="done" id="1XF-Pk-v6Z">
                                             <connections>
                                                 <action selector="onClickDone:" destination="-1" id="Lbg-xk-WzB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem systemItem="edit" id="1Hd-Qj-DB4">
+                                            <connections>
+                                                <action selector="onClickChat:" destination="-1" id="4B1-OD-NLQ"/>
                                             </connections>
                                         </barButtonItem>
                                     </items>

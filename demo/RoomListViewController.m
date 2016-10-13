@@ -61,7 +61,9 @@
     if(self.roomList == nil){
         self.roomList = [[NSMutableArray alloc] init];
     }
-    NSDictionary *room = [[NSDictionary alloc] initWithObjectsAndKeys:@"pic2.jpg", @"image",@"沙塔直播",@"title" , @"沙塔cdn网络性能演示",@"desc",@"rtmp://live.hkstv.hk.lxdns.com/live/hks",@"streamAddr", nil];
+    NSDictionary *room = [[NSDictionary alloc] initWithObjectsAndKeys:@"pic2.jpg", @"image",@"沙塔直播",@"title" , @"沙塔cdn网络性能演示",@"desc",@"rtmp://172.30.41.169/test/123456",@"streamAddr", nil];
+    
+   //NSDictionary *room = [[NSDictionary alloc] initWithObjectsAndKeys:@"pic2.jpg", @"image",@"沙塔直播",@"title" , @"沙塔cdn网络性能演示",@"desc",@"rtmp://live.hkstv.hk.lxdns.com/live/hks",@"streamAddr", nil];
     [self.roomList addObject:room];
 //    NSDictionary *room1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"image1.jpg", @"avatar",@"label1",@"title" , @"label2",@"desc", nil];
 //    [self.roomList addObject:room1];

@@ -19,8 +19,11 @@
 #import "IJKCommon.h"
 #import "IJKDemoHistory.h"
 
+#import "LiveVideoCoreSDK.h"
+
 @interface IJKVideoViewController() {
     UIImageView *transitView;
+    UIView *aSmallView ;
 }
 @end
 
@@ -135,6 +138,15 @@
   
 
     self.mediaControl.delegatePlayer = self.player;
+    
+    
+    double fScreenW = [UIScreen mainScreen].bounds.size.width;
+    double fScreenH = [UIScreen mainScreen].bounds.size.height;
+
+    
+    aSmallView = [[UIView alloc] initWithFrame:CGRectMake(fScreenW/2, fScreenH/2, fScreenW/2, fScreenH/2)];
+    [aSmallView setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:aSmallView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -181,7 +193,28 @@
 
 - (IBAction)onClickDone:(id)sender
 {
+    [[LiveVideoCoreSDK sharedinstance] disconnect];
+    [[LiveVideoCoreSDK sharedinstance] LiveRelease];
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)onChatClick:(id)sender{
+    
+}
+
+- (IBAction)onClickChat:(id)sender{
+    CGSize videosize;
+    
+    if (false) {
+        videosize = LIVE_VIEDO_SIZE_HORIZONTAL_D1;
+    }else{
+        videosize = LIVE_VIEDO_SIZE_D1;
+    }
+    //videosize = CGSizeMake(600, 1200);
+    NSURL *RtmpUrl = [NSURL URLWithString:@"rtmp://172.30.41.169/test/123457"];
+    [[LiveVideoCoreSDK sharedinstance] LiveInit:RtmpUrl Preview:aSmallView VideSize:videosize BitRate:LIVE_BITRATE_500Kbps FrameRate:30];
+    //[LiveVideoCoreSDK sharedinstance].delegate = self;
+    [[LiveVideoCoreSDK sharedinstance] connect];
 }
 
 - (IBAction)onClickHUD:(UIBarButtonItem *)sender
@@ -204,6 +237,11 @@
 {
     [self.player pause];
     [self.mediaControl refreshMediaControl];
+}
+
+
+
+- (IBAction)eee:(id)sender {
 }
 
 - (IBAction)didSliderTouchDown
